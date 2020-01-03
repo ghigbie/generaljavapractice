@@ -10,25 +10,17 @@ public class ExampleIO {
         try {
             int result = divide();
             System.out.println(result);
-        }catch(ArithmeticException e){
+        }catch(ArithmeticException | NoSuchElementException e){
             System.out.println(e.toString());
             System.out.println("Unable to perform division, autopilot shutting down");
         }
     }
 
     private static int divide(){
-        int x, y;
-        try {
-            x = getInt();
-            y = getInt();
-            System.out.println("X is " + x + ", Y is "+ y);
-            return x/y;
-        }catch(NoSuchElementException e){
-            throw new NoSuchElementException("Not a suitable input");
-        }catch(ArithmeticException e){
-            throw new ArithmeticException("Attemt to divide by zero");
-        }
-
+        int x = getInt();
+        int y = getInt();
+        System.out.println("X is " + x + ", Y is "+ y);
+        return x/y;
     }
 
     private static int getInt(){

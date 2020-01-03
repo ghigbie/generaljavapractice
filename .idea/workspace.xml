@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aa63328-d0b3-4892-ad80-6a1990ce3ca4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/higbie/classes/ExampleIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/higbie/classes/ExampleIO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578020514456</updated>
-      <workItem from="1578020517557" duration="1948000" />
+      <workItem from="1578020517557" duration="2010000" />
     </task>
     <servers />
   </component>
