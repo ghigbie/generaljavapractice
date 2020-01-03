@@ -7,8 +7,13 @@ import java.util.Scanner;
 public class ExampleIO {
 
     public static void main(String[] args){
-        int result = divide();
-        System.out.println(result);
+        try {
+            int result = divide();
+            System.out.println(result);
+        }catch(ArithmeticException e){
+            System.out.println(e.toString());
+            System.out.println("Unable to perform division, autopilot shutting down");
+        }
     }
 
     private static int divide(){
