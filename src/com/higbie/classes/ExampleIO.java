@@ -1,6 +1,7 @@
 package com.higbie.classes;
 
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ExampleIO {
@@ -11,10 +12,18 @@ public class ExampleIO {
     }
 
     private static int divide(){
-        int x = getInt();
-        int y = getInt();
-        System.out.println("X is " + x + ", Y is "+ y);
-        return x/y;
+        int x, y;
+        try {
+            x = getInt();
+            y = getInt();
+            System.out.println("X is " + x + ", Y is "+ y);
+            return x/y;
+        }catch(NoSuchElementException e){
+            throw new NoSuchElementException("Not a suitable input");
+        }catch(ArithmeticException e){
+            throw new ArithmeticException("Attemt to divide by zero");
+        }
+
     }
 
     private static int getInt(){
